@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff9f0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 850px;
+    max-width: 100%;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px #00000015;
+}
+
+.imagem {
+    width: 40%;
+    background-color: #f0d436;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px;
+}
+
+.imagem img {
+    width: 130px;
+    margin-bottom: 25px;
+}
+
+.imagem h2 {
+    font-size: 25px;
+    color: #4a3510;
+    margin-bottom: 15px;
+}
+
+.imagem p {
+    color: #594b2d;
+    line-height: 1.6;
+}
+
+.icone {
+    font-size: 75px;
+    margin-top: 25px;
+}
+
+.formulario {
+    width: 60%;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.voltar {
+    color: #9c7b00;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.voltar:hover {
+    text-decoration: underline;
+}
+
+.cadeado {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.formulario h1 {
+    color: #352d20;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.descricao {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #352d20;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 14px;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #f0d436;
+    box-shadow: 0 0 5px #f0d43660;
+}
+
+button {
+    padding: 15px;
+    background-color: #f0d436;
+    color: #352d20;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #dfbf16;
+    transform: translateY(-2px);
+}
+
+.ajuda {
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+@media (max-width: 650px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .icone {
+        font-size: 45px;
+        margin-top: 10px;
+    }
+
+    .formulario {
+        padding: 30px 25px;
+    }
+}
